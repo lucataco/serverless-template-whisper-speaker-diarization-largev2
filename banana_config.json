@@ -1,5 +1,5 @@
 {
-    "name": "Whisper Speaker Diarization Med",
+    "name": "Whisper Speaker Diarization Large2",
     "category": "Audio",
     "example_input": {
       "youtube_url":"https://www.youtube.com/watch?v=-UX0X45sYe4",
