@@ -1,7 +1,9 @@
 
 # 🍌 Banana Serverless
 
-This repo gives a framework to serve ML models in production using simple HTTP servers.
+This repo provides a basic template for using Whisper large v2 on Banana's serverless GPU platform. Ready for 1-Click deploy. Based on the huggingface [gradio found here](https://huggingface.co/spaces/vumichien/whisper-speaker-diarization).
+
+![demo input image](https://github.com/lucataco/serverless-template-whisper-speaker-diarization/blob/main/whisper.jpg?raw=true)
 
 # Quickstart
 **[Follow the quickstart guide in Banana's documentation to use this repo](https://docs.banana.dev/banana-docs/quickstart).** 

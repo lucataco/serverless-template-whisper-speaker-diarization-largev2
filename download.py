@@ -1,13 +1,15 @@
 # In this file, we define download_model
 # It runs during container build time to get model weights built into the container
 
-# In this example: A Huggingface BERT model
-
-from transformers import pipeline
+import torch
+import whisper
+from pyannote.audio.pipelines.speaker_verification import PretrainedSpeakerEmbedding
 
 def download_model():
-    # do a dry run of loading the huggingface model, which will download weights
-    pipeline('fill-mask', model='bert-base-uncased')
+    #medium, large-v1, large-v2
+    model_name = "large-v2"
+    model = whisper.load_model(model_name)
+    embedding_model = PretrainedSpeakerEmbedding("speechbrain/spkrec-ecapa-voxceleb")
 
 if __name__ == "__main__":
     download_model()
